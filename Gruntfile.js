@@ -8,7 +8,8 @@ module.exports = function(grunt) {
         },
         cmd: "node",
         args: [
-          'src/main.js'
+          'src/main.js',
+          '-n'
         ]
       },
       electron: {
@@ -17,7 +18,8 @@ module.exports = function(grunt) {
         },
         cmd: "electron",
         args: [
-          'src/emain.js'
+          'src/main.js',
+          '-e'
         ]
       }
     },
